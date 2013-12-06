@@ -17,7 +17,7 @@ def main():
 
     for line in file.readlines():
         word = []
-        line = line.strip().split(' ')
+        line = line.rstrip().split(' ')
         for beep in line:
             if beep is not '':
                 word.append(morseDict[beep])
